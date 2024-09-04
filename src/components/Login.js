@@ -36,7 +36,7 @@ const Login = () => {
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
-            console.log(user);
+           
 
             updateProfile(auth.currentUser, {
                 displayName: name?.current?.value, photoURL: "https://cdn-icons-png.freepik.com/512/6915/6915987.png"
